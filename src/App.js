@@ -40,10 +40,10 @@ function App() {
             <a href="https://cruise-connect.vercel.app/" className='text-left' target="_blank" rel="noopener noreferrer">Cruise Connect</a>
           </li>
           <li className="text-white mb-4 text-2xl md:text-5xl lg:text-8xl transform transition-all duration-300 hover:text-gray-400 hover:scale-105 hover:shadow-lg">
-            <a href="https://restaurant-ordering-system-9alk.onrender.com" target="_blank" rel="noopener noreferrer">Restaurant Ordering System</a>
+            <a href="https://mflix-nu-seven.vercel.app/" target="_blank" rel="noopener noreferrer">Mflix (Netflix Clone)</a>
           </li>
           <li className="text-white mb-4 text-2xl md:text-5xl lg:text-8xl transform transition-all duration-300 hover:text-gray-400 hover:scale-105 hover:shadow-lg">
-            <a href="https://mflix-nu-seven.vercel.app/" target="_blank" rel="noopener noreferrer">Mflix (Netflix Clone)</a>
+            <a href="https://restaurant-ordering-system-9alk.onrender.com" target="_blank" rel="noopener noreferrer">Restaurant Ordering System</a>
           </li>
         </ul>
       </div>
