@@ -110,85 +110,285 @@ function App() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500">My Skills</span>
               <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-indigo-500 rounded-full"></div>
             </h2>
+            <p className="text-gray-400 mt-6 max-w-2xl mx-auto">A comprehensive toolkit developed through academic projects and professional experience.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="p-6 rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/10">
-              <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-                <span className="text-indigo-400 mr-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Frontend */}
+            <div className="p-6 rounded-xl bg-gradient-to-br from-blue-900/50 to-blue-800/30 backdrop-blur-sm border border-blue-700/30 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 group">
+              <h3 className="text-xl font-bold text-white mb-6 flex items-center group-hover:text-blue-400 transition-colors">
+                <span className="text-blue-400 mr-3 bg-blue-900/60 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </span>
+                Frontend
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-4 h-4" alt="React" />
+                  React
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-gray-800 to-gray-700 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="w-4 h-4 invert" alt="Next.js" />
+                  Next.js
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" className="w-4 h-4" alt="Redux" />
+                  Redux
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="w-4 h-4" alt="HTML5" />
+                  HTML5
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="w-4 h-4" alt="CSS3" />
+                  CSS3
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-4 h-4" alt="JavaScript" />
+                  JavaScript
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" className="w-4 h-4" alt="Webpack" />
+                  Webpack
+                </span>
+              </div>
+            </div>
+
+            {/* Backend */}
+            <div className="p-6 rounded-xl bg-gradient-to-br from-green-900/50 to-green-800/30 backdrop-blur-sm border border-green-700/30 hover:border-green-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/10 group">
+              <h3 className="text-xl font-bold text-white mb-6 flex items-center group-hover:text-green-400 transition-colors">
+                <span className="text-green-400 mr-3 bg-green-900/60 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                  </svg>
+                </span>
+                Backend
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1.5 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-4 h-4" alt="Node.js" />
+                  Node.js
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="w-4 h-4 invert" alt="Express" />
+                  Express
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" className="w-4 h-4" alt="Spring" />
+                  Spring
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" className="w-4 h-4" alt="Spring Boot" />
+                  Spring Boot
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" className="w-4 h-4 invert" alt="Flask" />
+                  Flask
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" className="w-4 h-4" alt="Nginx" />
+                  Nginx
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                  REST APIs
+                </span>
+              </div>
+            </div>
+
+            {/* Languages */}
+            <div className="p-6 rounded-xl bg-gradient-to-br from-yellow-900/50 to-yellow-800/30 backdrop-blur-sm border border-yellow-700/30 hover:border-yellow-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/10 group">
+              <h3 className="text-xl font-bold text-white mb-6 flex items-center group-hover:text-yellow-400 transition-colors">
+                <span className="text-yellow-400 mr-3 bg-yellow-900/60 p-2 rounded-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
                 </span>
-                Languages & Frameworks
+                Languages
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=react" alt="React" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">React</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">Node.js</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">JavaScript</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=py" alt="Python" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">Python</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=java" alt="Java" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">Java</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">MongoDB</span>
-                </div>
-              </div>
-              <div className="mt-6 text-center">
-                <a href="#" className="text-indigo-400 hover:underline text-sm">
-                  And many more...
-                </a>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-4 h-4" alt="JavaScript" />
+                  JavaScript
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" className="w-4 h-4" alt="Java" />
+                  Java
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" className="w-4 h-4" alt="Python" />
+                  Python
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" className="w-4 h-4" alt="Go" />
+                  Go
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" className="w-4 h-4" alt="C" />
+                  C
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" className="w-4 h-4" alt="Bash" />
+                  Bash
+                </span>
               </div>
             </div>
-            
-            <div className="p-6 rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/10">
-              <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-                <span className="text-indigo-400 mr-2">
+
+            {/* Database */}
+            <div className="p-6 rounded-xl bg-gradient-to-br from-red-900/50 to-red-800/30 backdrop-blur-sm border border-red-700/30 hover:border-red-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10 group">
+              <h3 className="text-xl font-bold text-white mb-6 flex items-center group-hover:text-red-400 transition-colors">
+                <span className="text-red-400 mr-3 bg-red-900/60 p-2 rounded-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                   </svg>
                 </span>
-                Tools & Software
+                Database
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">VS Code</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=git" alt="Git" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">Git</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=github" alt="GitHub" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">GitHub</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=docker" alt="Docker" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">Docker</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=linux" alt="Linux" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">Linux</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img src="https://skillicons.dev/icons?i=postman" alt="Postman" className="w-14 h-14" />
-                  <span className="text-gray-300 mt-2">Postman</span>
-                </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" className="w-4 h-4" alt="MySQL" />
+                  MySQL
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" className="w-4 h-4" alt="PostgreSQL" />
+                  PostgreSQL
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-4 h-4" alt="MongoDB" />
+                  MongoDB
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-red-500 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" className="w-4 h-4" alt="Firebase" />
+                  Firebase
+                </span>
+              </div>
+            </div>
+
+            {/* DevOps */}
+            <div className="p-6 rounded-xl bg-gradient-to-br from-purple-900/50 to-purple-800/30 backdrop-blur-sm border border-purple-700/30 hover:border-purple-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10 group">
+              <h3 className="text-xl font-bold text-white mb-6 flex items-center group-hover:text-purple-400 transition-colors">
+                <span className="text-purple-400 mr-3 bg-purple-900/60 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                </span>
+                DevOps & Tools
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" className="w-4 h-4" alt="Docker" />
+                  Docker
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" className="w-4 h-4" alt="AWS" />
+                  AWS
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" className="w-4 h-4" alt="Jenkins" />
+                  Jenkins
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="w-4 h-4" alt="Git" />
+                  Git
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" className="w-4 h-4" alt="Linux" />
+                  Linux
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" className="w-4 h-4" alt="Postman" />
+                  Postman
+                </span>
+              </div>
+            </div>
+
+            {/* CSS & UI Frameworks */}
+            <div className="p-6 rounded-xl bg-gradient-to-br from-cyan-900/50 to-cyan-800/30 backdrop-blur-sm border border-cyan-700/30 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10 group">
+              <h3 className="text-xl font-bold text-white mb-6 flex items-center group-hover:text-cyan-400 transition-colors">
+                <span className="text-cyan-400 mr-3 bg-cyan-900/60 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                  </svg>
+                </span>
+                CSS & UI Frameworks
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1.5 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className="w-4 h-4" alt="Tailwind CSS" />
+                  Tailwind CSS
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" className="w-4 h-4" alt="Bootstrap" />
+                  Bootstrap
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="w-4 h-4" alt="CSS3" />
+                  CSS3
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-pink-500 to-pink-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" className="w-4 h-4" alt="SASS" />
+                  SASS
+                </span>
+                <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" className="w-4 h-4" alt="Material UI" />
+                  Material UI
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Data Science & ML */}
+          <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-violet-900/50 to-indigo-800/30 backdrop-blur-sm border border-violet-700/30 hover:border-violet-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/10 group">
+            <h3 className="text-xl font-bold text-white mb-6 flex items-center group-hover:text-violet-400 transition-colors">
+              <span className="text-violet-400 mr-3 bg-violet-900/60 p-2 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </span>
+              Data Science & Machine Learning
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" className="w-4 h-4" alt="scikit-learn" />
+                scikit-learn
+              </span>
+              <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" className="w-4 h-4" alt="Pandas" />
+                Pandas
+              </span>
+              <span className="px-3 py-1.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" className="w-4 h-4" alt="NumPy" />
+                NumPy
+              </span>
+              <span className="px-3 py-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" className="w-4 h-4" alt="TensorFlow" />
+                TensorFlow
+              </span>
+              <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-full text-sm flex items-center gap-1 shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                </svg>
+                Data Visualization
+              </span>
+            </div>
+          </div>
+
+          <div className="mt-12 flex items-center justify-center">
+            <div className="bg-gradient-to-r from-indigo-900/50 to-purple-900/50 p-6 rounded-xl backdrop-blur-sm border border-indigo-700/30 max-w-xl text-center">
+              <p className="text-gray-300">Currently working on expanding my skills in</p>
+              <div className="flex flex-wrap justify-center gap-3 mt-3">
+                <span className="px-4 py-2 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full inline-flex items-center gap-2 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" className="w-5 h-5" alt="Spring Boot" />
+                  Spring Boot
+                </span>
+                <span className="px-4 py-2 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full inline-flex items-center gap-2 shadow-sm">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" className="w-5 h-5" alt="Spring Security" />
+                  Spring Security
+                </span>
               </div>
             </div>
           </div>
