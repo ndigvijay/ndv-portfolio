@@ -403,106 +403,318 @@ function App() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500">Featured Projects</span>
               <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-indigo-500 rounded-full"></div>
             </h2>
+            <p className="text-gray-400 mt-6 max-w-2xl mx-auto">Explore some of my recent work and personal projects</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="group">
-              <div className="overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-indigo-500/20">
-                <div className="h-48 bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center text-white text-2xl font-bold">
-                  Cruise Connect
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Cruise Connect</h3>
-                  <p className="text-gray-400 text-sm mb-4">A modern transportation platform connecting travelers to cruise options.</p>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="px-2 py-1 bg-indigo-900/60 text-indigo-300 rounded text-xs">React</span>
-                    <span className="px-2 py-1 bg-indigo-900/60 text-indigo-300 rounded text-xs">Node.js</span>
-                    <span className="px-2 py-1 bg-indigo-900/60 text-indigo-300 rounded text-xs">MongoDB</span>
+            {/* Cruise Connect Project */}
+            <div className="group perspective-1000">
+              <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-indigo-900/50 to-indigo-800/30 backdrop-blur-sm border border-indigo-700/30 hover:border-indigo-500/50 transition-all duration-500 transform group-hover:shadow-xl group-hover:shadow-indigo-500/20 h-full">
+                <div className="absolute top-0 right-0 -mt-4 -mr-4 w-20 h-20 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full blur-2xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div className="h-56 relative overflow-hidden flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/90 to-purple-600/90"></div>
+                  
+                  {/* Project Illustration - Cruise Connect */}
+                  <div className="relative z-10 transform transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3">
+                    <div className="w-56 h-40 mx-auto bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 shadow-lg p-3 relative">
+                      <div className="absolute top-0 left-0 right-0 h-5 bg-gray-800/50 rounded-t-lg flex items-center px-2">
+                        <div className="flex space-x-1">
+                          <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                          <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
+                          <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                        </div>
+                      </div>
+                      <div className="mt-4 bg-indigo-800/30 h-16 rounded-md flex items-center justify-center">
+                        <div className="text-white text-lg font-semibold">Cruise Connect</div>
+                      </div>
+                      <div className="mt-3 flex space-x-2">
+                        <div className="h-3 w-12 bg-indigo-500/50 rounded-full"></div>
+                        <div className="h-3 w-20 bg-purple-500/50 rounded-full"></div>
+                      </div>
+                      <div className="mt-2 flex space-x-2">
+                        <div className="h-3 w-16 bg-indigo-500/50 rounded-full"></div>
+                        <div className="h-3 w-10 bg-purple-500/50 rounded-full"></div>
+                      </div>
+                    </div>
                   </div>
-                  <a 
-                    href="https://cruise-connect.vercel.app/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center text-indigo-400 hover:text-indigo-300"
-                  >
-                    View Project
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </div>
+                
+                <div className="p-6 relative z-10">
+                  <div className="absolute -top-12 right-6 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                    Deployed
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
-                  </a>
+                    Cruise Connect
+                  </h3>
+                  
+                  <p className="text-gray-300 text-sm mb-4">A modern transportation platform connecting travelers to cruise options with real-time tracking and booking.</p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    <span className="px-3 py-1.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-full text-xs flex items-center gap-1 shadow-sm">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-3 h-3" alt="React" />
+                      React
+                    </span>
+                    <span className="px-3 py-1.5 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full text-xs flex items-center gap-1 shadow-sm">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-3 h-3" alt="Node.js" />
+                      Node.js
+                    </span>
+                    <span className="px-3 py-1.5 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full text-xs flex items-center gap-1 shadow-sm">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-3 h-3" alt="MongoDB" />
+                      MongoDB
+                    </span>
+                  </div>
+                  
+                  <div className="flex justify-between items-center">
+                    <a 
+                      href="https://cruise-connect.vercel.app/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center px-4 py-2 bg-indigo-600/80 hover:bg-indigo-700/80 text-white text-sm rounded-lg transition-colors duration-300"
+                    >
+                      Live Demo
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    
+                    <a 
+                      href="#" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-indigo-400 hover:text-indigo-300 p-2 rounded-full hover:bg-indigo-900/30 transition-colors"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="group">
-              <div className="overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-indigo-500/20">
-                <div className="h-48 bg-gradient-to-r from-red-600 to-orange-600 flex items-center justify-center text-white text-2xl font-bold">
-                  Mflix
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Mflix (Netflix Clone)</h3>
-                  <p className="text-gray-400 text-sm mb-4">A sophisticated streaming platform clone with modern UI and features.</p>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="px-2 py-1 bg-indigo-900/60 text-indigo-300 rounded text-xs">React</span>
-                    <span className="px-2 py-1 bg-indigo-900/60 text-indigo-300 rounded text-xs">Firebase</span>
-                    <span className="px-2 py-1 bg-indigo-900/60 text-indigo-300 rounded text-xs">API Integration</span>
+            {/* Mflix Project */}
+            <div className="group perspective-1000">
+              <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-red-900/50 to-orange-800/30 backdrop-blur-sm border border-red-700/30 hover:border-red-500/50 transition-all duration-500 transform group-hover:shadow-xl group-hover:shadow-red-500/20 h-full">
+                <div className="absolute top-0 right-0 -mt-4 -mr-4 w-20 h-20 bg-gradient-to-br from-red-600 to-orange-600 rounded-full blur-2xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div className="h-56 relative overflow-hidden flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-600/90 to-orange-600/90"></div>
+                  
+                  {/* Project Illustration - Mflix */}
+                  <div className="relative z-10 transform transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3">
+                    <div className="w-56 h-40 mx-auto bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 shadow-lg p-3 relative">
+                      <div className="absolute top-0 left-0 right-0 h-5 bg-gray-800/50 rounded-t-lg flex items-center px-2">
+                        <div className="flex space-x-1">
+                          <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                          <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
+                          <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                        </div>
+                      </div>
+                      <div className="mt-4">
+                        <div className="h-5 w-40 mx-auto bg-red-500/50 rounded-md"></div>
+                        <div className="mt-3 grid grid-cols-3 gap-1">
+                          <div className="h-12 bg-orange-500/30 rounded-md"></div>
+                          <div className="h-12 bg-orange-500/30 rounded-md"></div>
+                          <div className="h-12 bg-orange-500/30 rounded-md"></div>
+                        </div>
+                        <div className="mt-2 grid grid-cols-4 gap-1">
+                          <div className="h-8 bg-red-500/30 rounded-md"></div>
+                          <div className="h-8 bg-red-500/30 rounded-md"></div>
+                          <div className="h-8 bg-red-500/30 rounded-md"></div>
+                          <div className="h-8 bg-red-500/30 rounded-md"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <a 
-                    href="https://mflix-nu-seven.vercel.app/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center text-indigo-400 hover:text-indigo-300"
-                  >
-                    View Project
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </div>
+                
+                <div className="p-6 relative z-10">
+                  <div className="absolute -top-12 right-6 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                    Deployed
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-400 transition-colors flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                  </a>
+                    Mflix (Netflix Clone)
+                  </h3>
+                  
+                  <p className="text-gray-300 text-sm mb-4">A sophisticated streaming platform clone with modern UI, content recommendations, and user profiles.</p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    <span className="px-3 py-1.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-full text-xs flex items-center gap-1 shadow-sm">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-3 h-3" alt="React" />
+                      React
+                    </span>
+                    <span className="px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-red-500 text-white rounded-full text-xs flex items-center gap-1 shadow-sm">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" className="w-3 h-3" alt="Firebase" />
+                      Firebase
+                    </span>
+                    <span className="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full text-xs flex items-center gap-1 shadow-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                      API Integration
+                    </span>
+                  </div>
+                  
+                  <div className="flex justify-between items-center">
+                    <a 
+                      href="https://mflix-nu-seven.vercel.app/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center px-4 py-2 bg-red-600/80 hover:bg-red-700/80 text-white text-sm rounded-lg transition-colors duration-300"
+                    >
+                      Live Demo
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    
+                    <a 
+                      href="https://github.com/ndigvijay/mflix" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-red-400 hover:text-red-300 p-2 rounded-full hover:bg-red-900/30 transition-colors"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="group">
-              <div className="overflow-hidden rounded-xl bg-gray-800 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-indigo-500/20">
-                <div className="h-48 bg-gradient-to-r from-green-600 to-teal-600 flex items-center justify-center text-white text-2xl font-bold">
-                  Restaurant OS
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Restaurant Ordering System</h3>
-                  <p className="text-gray-400 text-sm mb-4">An efficient ordering system for restaurants with real-time updates.</p>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="px-2 py-1 bg-indigo-900/60 text-indigo-300 rounded text-xs">Express</span>
-                    <span className="px-2 py-1 bg-indigo-900/60 text-indigo-300 rounded text-xs">MongoDB</span>
-                    <span className="px-2 py-1 bg-indigo-900/60 text-indigo-300 rounded text-xs">JavaScript</span>
+            {/* Restaurant Ordering System */}
+            <div className="group perspective-1000">
+              <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-green-900/50 to-teal-800/30 backdrop-blur-sm border border-green-700/30 hover:border-green-500/50 transition-all duration-500 transform group-hover:shadow-xl group-hover:shadow-green-500/20 h-full">
+                <div className="absolute top-0 right-0 -mt-4 -mr-4 w-20 h-20 bg-gradient-to-br from-green-600 to-teal-600 rounded-full blur-2xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div className="h-56 relative overflow-hidden flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-600/90 to-teal-600/90"></div>
+                  
+                  {/* Project Illustration - Restaurant OS */}
+                  <div className="relative z-10 transform transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3">
+                    <div className="w-56 h-40 mx-auto bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 shadow-lg p-3 relative">
+                      <div className="absolute top-0 left-0 right-0 h-5 bg-gray-800/50 rounded-t-lg flex items-center px-2">
+                        <div className="flex space-x-1">
+                          <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                          <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
+                          <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                        </div>
+                      </div>
+                      <div className="mt-4 flex">
+                        <div className="w-1/3 pr-2">
+                          <div className="h-5 w-full bg-green-500/50 rounded-md mb-2"></div>
+                          <div className="h-3 w-full bg-green-500/30 rounded-md mb-1"></div>
+                          <div className="h-3 w-full bg-green-500/30 rounded-md mb-1"></div>
+                          <div className="h-3 w-full bg-green-500/30 rounded-md"></div>
+                        </div>
+                        <div className="w-2/3">
+                          <div className="grid grid-cols-2 gap-2">
+                            <div className="h-14 bg-teal-500/30 rounded-md flex items-center justify-center">
+                              <div className="w-8 h-8 bg-white/20 rounded-full"></div>
+                            </div>
+                            <div className="h-14 bg-teal-500/30 rounded-md flex items-center justify-center">
+                              <div className="w-8 h-8 bg-white/20 rounded-full"></div>
+                            </div>
+                            <div className="h-14 bg-teal-500/30 rounded-md flex items-center justify-center">
+                              <div className="w-8 h-8 bg-white/20 rounded-full"></div>
+                            </div>
+                            <div className="h-14 bg-teal-500/30 rounded-md flex items-center justify-center">
+                              <div className="w-8 h-8 bg-white/20 rounded-full"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <a 
-                    href="https://restaurant-ordering-system-9alk.onrender.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center text-indigo-400 hover:text-indigo-300"
-                  >
-                    View Project
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </div>
+                
+                <div className="p-6 relative z-10">
+                  <div className="absolute -top-12 right-6 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                    Deployed
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-green-400 transition-colors flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
-                  </a>
+                    Restaurant Ordering System
+                  </h3>
+                  
+                  <p className="text-gray-300 text-sm mb-4">An efficient ordering system for restaurants with inventory management, real-time order tracking, and digital menu.</p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    <span className="px-3 py-1.5 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-full text-xs flex items-center gap-1 shadow-sm">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="w-3 h-3 invert" alt="Express" />
+                      Express
+                    </span>
+                    <span className="px-3 py-1.5 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full text-xs flex items-center gap-1 shadow-sm">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-3 h-3" alt="MongoDB" />
+                      MongoDB
+                    </span>
+                    <span className="px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-full text-xs flex items-center gap-1 shadow-sm">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-3 h-3" alt="JavaScript" />
+                      JavaScript
+                    </span>
+                  </div>
+                  
+                  <div className="flex justify-between items-center">
+                    <a 
+                      href="https://restaurant-ordering-system-9alk.onrender.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center px-4 py-2 bg-green-600/80 hover:bg-green-700/80 text-white text-sm rounded-lg transition-colors duration-300"
+                    >
+                      Live Demo
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    
+                    <a 
+                      href="https://github.com/ndigvijay/Restaurant-Ordering-System" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-green-400 hover:text-green-300 p-2 rounded-full hover:bg-green-900/30 transition-colors"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="mt-12 text-center">
-            <a 
-              href="https://github.com/ndigvijay" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="px-6 py-3 bg-indigo-600/20 text-indigo-400 rounded-lg hover:bg-indigo-600/30 transition-colors inline-flex items-center"
-            >
-              View More Projects on GitHub
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
+          <div className="mt-16 flex justify-center">
+            <div className="relative">
+              <div className="absolute inset-0 blur-md bg-gradient-to-r from-indigo-500/30 to-purple-500/30 rounded-xl"></div>
+              <a 
+                href="https://github.com/ndigvijay" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="relative z-10 px-8 py-4 bg-gradient-to-r from-indigo-700/80 to-purple-700/80 hover:from-indigo-600/80 hover:to-purple-600/80 text-white rounded-xl transition-all duration-300 inline-flex items-center gap-3 border border-indigo-500/30"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.237 1.237 1.07 1.834 2.807 1.304 3.492.997-.266 1.942-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                View More Projects on GitHub
+                <span className="absolute -top-1 -right-1 bg-indigo-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  6+
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -579,7 +791,7 @@ function App() {
                   className="bg-indigo-900/60 p-3 rounded-full text-white hover:bg-indigo-800 transition-colors"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.417-.923c.445-.445.718-.89.923-1.416.197-.509.332-1.09.372-1.942.372-1.942.44-1.096.24-2.515.04-3.29.04-2.172 0-2.444.01-3.296-.048-3.296-.84.002-1.42.002-2.822-.048-4.242.048-1.42.198-2.82.396-4.242.048-1.42-.198-2.82-.396-4.242.048z"/>
                   </svg>
                 </a>
               </div>
