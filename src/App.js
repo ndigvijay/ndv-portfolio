@@ -102,18 +102,66 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="bg-gray-900 min-h-screen justify-center pt-20 p-10 md:p-20">
         <h2 className="text-white font-montserrat text-6xl md:text-7xl lg:text-9xl mb-8 md:mb-20 pt-0 text-center">Projects</h2>
-        <div className='flex flex-col justify-center items-center pt-20 mt-20 md:mt-32 lg:mt-20'>
-          <ul>
-            <li className="text-white mb-4 text-2xl md:text-5xl lg:text-7xl transform transition-all duration-300 hover:text-gray-400 hover:scale-105 hover:shadow-lg">
-              <a href="https://cruise-connect.vercel.app/" className='text-left' target="_blank" rel="noopener noreferrer">Cruise Connect</a>
-            </li>
-            <li className="text-white mb-4 text-2xl md:text-5xl lg:text-7xl transform transition-all duration-300 hover:text-gray-400 hover:scale-105 hover:shadow-lg">
-              <a href="https://mflix-nu-seven.vercel.app/" target="_blank" rel="noopener noreferrer">Mflix (Netflix Clone)</a>
-            </li>
-            <li className="text-white mb-4 text-2xl md:text-5xl lg:text-7xl transform transition-all duration-300 hover:text-gray-400 hover:scale-105 hover:shadow-lg">
-              <a href="https://restaurant-ordering-system-9alk.onrender.com" target="_blank" rel="noopener noreferrer">Restaurant Ordering System</a>
-            </li>
-          </ul>
+        <div className='flex flex-col justify-center items-center gap-8 md:gap-12 max-w-5xl mx-auto'>
+
+          {/* Graph Based Malware Analysis API */}
+          <a href="https://github.com/ndigvijay/Capstone_98_2025" target="_blank" rel="noopener noreferrer"
+             className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
+            <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Graph Based Malware Analysis API</h3>
+            <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
+              A malware analysis platform that combines graph theory and machine learning to classify
+              and analyze malicious executables. The system analyzes pre-trained malware executables and provides
+              detailed classification probabilities.
+            </p>
+            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg">
+              <span className="text-gray-500">Technologies:</span> Flask, NetworkX, PyMongo, Matplotlib, PyVis, Cuckoo Sandbox, React 18, React Router, Tailwind CSS
+            </p>
+          </a>
+
+          {/* Mflix - Netflix Clone */}
+          <a href="https://mflix-nu-seven.vercel.app/" target="_blank" rel="noopener noreferrer"
+             className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
+            <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Mflix - Netflix Clone</h3>
+            <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
+              A streaming platform clone built to understand API integration and web development fundamentals.
+              Used the OMDB API to fetch and display movie data dynamically. Implemented custom authentication
+              from scratch to handle user login and session management.
+            </p>
+            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg">
+              <span className="text-gray-500">Technologies:</span> React, CSS, React Router Dom, MongoDB, Express, Node.js
+            </p>
+          </a>
+
+          {/* Cruise Connect */}
+          <a href="https://cruise-connect.vercel.app/" target="_blank" rel="noopener noreferrer"
+             className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
+            <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Cruise Connect</h3>
+            <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
+              A business-to-consumer car rental platform featuring complete CRUD operations for vehicle management.
+              Built with dual-layer authentication supporting both admin and user roles. Implemented pagination,
+              advanced filtering, and search functionality to enhance user experience when browsing available cars.
+            </p>
+            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg">
+              <span className="text-gray-500">Technologies:</span> React, Tailwind CSS, MongoDB, Express, Node.js
+            </p>
+          </a>
+
+          {/* Restaurant Ordering System */}
+          <a href="https://restaurant-ordering-system-9alk.onrender.com" target="_blank" rel="noopener noreferrer"
+             className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
+            <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Restaurant Ordering System</h3>
+            <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
+              A comprehensive dine-in ordering platform that streamlines the restaurant experience.
+              Customers can browse menus, place orders directly from their tables, and receive automated
+              bill generation. Built using Spring Boot architecture with proper separation of concerns
+              through Models, Repositories, Services, and Controllers. Containerized with Docker for
+              easy deployment and scalability.
+            </p>
+            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg">
+              <span className="text-gray-500">Technologies:</span> Java, JSP, Spring Boot, CSS, Docker
+            </p>
+          </a>
+
         </div>
       </section>
 
