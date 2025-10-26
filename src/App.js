@@ -9,6 +9,7 @@ function App() {
         <div className="container mx-auto flex flex-wrap justify-between items-center">
           <a href="#about" className="text-white text-lg font-bold">N Digvijay</a>
           <div className="space-x-6 flex  sm:flex-row">
+            <a href="#experience" className="text-white hover:text-gray-400">Experience</a>
             <a href="#projects" className="text-white hover:text-gray-400">Projects</a>
             <a href="#contact" className="text-white hover:text-gray-400">Contact Me</a>
           </div>
@@ -20,12 +21,12 @@ function App() {
         <div>
           <img src={dp} alt="display pic" className="p-8 md:p-0 rounded-3xl md:rounded-full lg:rounded-full w-25 h-25 md:w-100 md:h-100 lg:h-80 lg:w-80 border-4 border-white" />
         </div>
-        <div className="text-white font-montserrat p-12 md:p-0 lg:p-0 pt-20 md:pt-20 lg:pt-0 lg:pl-20 text-2xl md:text-4xl lg:text-6xl md:mt-0">
+        <div className="text-white font-montserrat p-10 md:p-8 lg:p-0 pt-20 md:pt-20 lg:pt-0 lg:pl-20 text-2xl md:text-4xl lg:text-6xl md:mt-0">
           Hello, I am N Digvijay
           <br />
-          Full Stack Developer at Gowarm.ai
+          Full Stack Developer at GoWarm.ai
           <br />
-          B.tech Graduate from PES University
+          B.tech Graduate from PESU
         </div>
       </section>
 
@@ -56,6 +57,44 @@ function App() {
                 alt="Tools & Software"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="bg-gray-900 min-h-screen flex flex-col items-center justify-center p-10 md:p-20">
+        <div className="text-center mb-12">
+          <h2 className="text-white font-montserrat text-3xl md:text-6xl lg:text-7xl">Experience</h2>
+        </div>
+        <div className="text-white font-montserrat w-full max-w-4xl space-y-12">
+          {/* GoWarm - Software Developer */}
+          <div className="border-l-4 border-gray-600 pl-6">
+            <h3 className="text-2xl md:text-3xl font-bold">Software Developer Engineer</h3>
+            <p className="text-xl md:text-2xl text-gray-300 mt-2">GoWarm</p>
+            <p className="text-lg md:text-xl text-gray-400 mt-1">Aug 2025 - Present · 3 mos</p>
+            <p className="text-lg md:text-xl text-gray-400">Hyderabad, Telangana, India · Hybrid</p>
+            <p className="text-base md:text-lg text-gray-500 mt-2">Creating Customer Outreach solutions</p>
+            <p className="text-base md:text-lg text-gray-400 mt-3">Skills: Material-UI, React Query, Redux, Microsoft Azure</p>
+          </div>
+
+          {/* GoWarm - Dev Intern */}
+          <div className="border-l-4 border-gray-600 pl-6">
+            <h3 className="text-2xl md:text-3xl font-bold">Dev Intern</h3>
+            <p className="text-xl md:text-2xl text-gray-300 mt-2">GoWarm</p>
+            <p className="text-lg md:text-xl text-gray-400 mt-1">Jan 2025 - Jul 2025 · 7 mos</p>
+            <p className="text-lg md:text-xl text-gray-400">Hyderabad, Telangana, India · Onsite</p>
+            <p className="text-base md:text-lg text-gray-500 mt-2">Building and maintaining microservices.</p>
+            <p className="text-base md:text-lg text-gray-400 mt-3">Skills: Customer Relationship Management (CRM), FastAPI, HubSpot Sales Hub, Spring Boot, MongoDB, Java, React.js</p>
+          </div>
+
+          {/* CoDMAV PESU - Intern */}
+          <div className="border-l-4 border-gray-600 pl-6">
+            <h3 className="text-2xl md:text-3xl font-bold">Intern</h3>
+            <p className="text-xl md:text-2xl text-gray-300 mt-2">CoDMAV PESU</p>
+            <p className="text-lg md:text-xl text-gray-400 mt-1">Jun 2024 - Nov 2024 · 6 mos</p>
+            <p className="text-lg md:text-xl text-gray-400">Bangalore Urban, Karnataka, India · Hybrid</p>
+            <p className="text-base md:text-lg text-gray-500 mt-2">Building a Research Portal for PES University.</p>
+            <p className="text-base md:text-lg text-gray-400 mt-3">Skills: Software Project Management, MongoDB, Tailwind CSS, Full-Stack Development, Express.js, Nginx, React.js, Reverse Proxy</p>
           </div>
         </div>
       </section>
