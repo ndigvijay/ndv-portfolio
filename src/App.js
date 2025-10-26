@@ -23,9 +23,9 @@ function App() {
         <div className="text-white font-montserrat p-12 md:p-0 lg:p-0 pt-20 md:pt-20 lg:pt-0 lg:pl-20 text-2xl md:text-4xl lg:text-6xl md:mt-0">
           Hello, I am N Digvijay
           <br />
-          Full Stack Developer
+          Full Stack Developer at Gowarm.ai
           <br />
-          Pursuing B.tech in PES University
+          B.tech Graduate from PES University
         </div>
       </section>
 
