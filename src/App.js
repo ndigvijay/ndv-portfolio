@@ -74,7 +74,7 @@ function App() {
             <p className="text-lg md:text-xl text-gray-400 mt-1">Aug 2025 - Present · 3 mos</p>
             <p className="text-lg md:text-xl text-gray-400">Hyderabad, Telangana, India · Hybrid</p>
             <p className="text-base md:text-lg text-gray-500 mt-2">Creating Customer Outreach solutions</p>
-            <p className="text-base md:text-lg text-gray-400 mt-3">Skills: Material-UI, React Query, Redux, Microsoft Azure</p>
+            <p className="text-base md:text-lg text-gray-400 mt-3 font-medium">Skills: Material-UI, React Query, Redux, Microsoft Azure</p>
           </div>
 
           {/* GoWarm - Dev Intern */}
@@ -84,7 +84,7 @@ function App() {
             <p className="text-lg md:text-xl text-gray-400 mt-1">Jan 2025 - Jul 2025 · 7 mos</p>
             <p className="text-lg md:text-xl text-gray-400">Hyderabad, Telangana, India · Onsite</p>
             <p className="text-base md:text-lg text-gray-500 mt-2">Building and maintaining microservices.</p>
-            <p className="text-base md:text-lg text-gray-400 mt-3">Skills: Customer Relationship Management (CRM), FastAPI, HubSpot Sales Hub, Spring Boot, MongoDB, Java, React.js</p>
+            <p className="text-base md:text-lg text-gray-400 mt-3 font-medium">Skills: Customer Relationship Management (CRM), FastAPI, HubSpot Sales Hub, Spring Boot, MongoDB, Java, React.js</p>
           </div>
 
           {/* CoDMAV PESU - Intern */}
@@ -94,7 +94,7 @@ function App() {
             <p className="text-lg md:text-xl text-gray-400 mt-1">Jun 2024 - Nov 2024 · 6 mos</p>
             <p className="text-lg md:text-xl text-gray-400">Bangalore Urban, Karnataka, India · Hybrid</p>
             <p className="text-base md:text-lg text-gray-500 mt-2">Building a Research Portal for PES University.</p>
-            <p className="text-base md:text-lg text-gray-400 mt-3">Skills: Software Project Management, MongoDB, Tailwind CSS, Full-Stack Development, Express.js, Nginx, React.js, Reverse Proxy</p>
+            <p className="text-base md:text-lg text-gray-400 mt-3 font-medium">Skills: Software Project Management, MongoDB, Tailwind CSS, Full-Stack Development, Express.js, Nginx, React.js, Reverse Proxy</p>
           </div>
         </div>
       </section>
@@ -113,7 +113,7 @@ function App() {
               and analyze malicious executables. The system analyzes pre-trained malware executables and provides
               detailed classification probabilities.
             </p>
-            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg">
+            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg font-medium">
               <span className="text-gray-500">Technologies:</span> Flask, NetworkX, PyMongo, Matplotlib, PyVis, Cuckoo Sandbox, React 18, React Router, Tailwind CSS
             </p>
           </a>
@@ -127,7 +127,7 @@ function App() {
               Used the OMDB API to fetch and display movie data dynamically. Implemented custom authentication
               from scratch to handle user login and session management.
             </p>
-            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg">
+            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg font-medium">
               <span className="text-gray-500">Technologies:</span> React, CSS, React Router Dom, MongoDB, Express, Node.js
             </p>
           </a>
@@ -141,7 +141,7 @@ function App() {
               Built with dual-layer authentication supporting both admin and user roles. Implemented pagination,
               advanced filtering, and search functionality to enhance user experience when browsing available cars.
             </p>
-            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg">
+            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg font-medium">
               <span className="text-gray-500">Technologies:</span> React, Tailwind CSS, MongoDB, Express, Node.js
             </p>
           </a>
@@ -157,7 +157,7 @@ function App() {
               through Models, Repositories, Services, and Controllers. Containerized with Docker for
               easy deployment and scalability.
             </p>
-            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg">
+            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg font-medium">
               <span className="text-gray-500">Technologies:</span> Java, JSP, Spring Boot, CSS, Docker
             </p>
           </a>
