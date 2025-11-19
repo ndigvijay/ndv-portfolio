@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="bg-black font-sans">
       {/* Navbar */}
-      <nav className="bg-gray-800 p-4 fixed w-full">
+      <nav className="bg-gray-800 p-4 fixed w-full z-50">
         <div className="container mx-auto flex flex-wrap justify-between items-center">
           <a href="#about" className="text-white text-lg font-bold">N Digvijay</a>
           <div className="space-x-6 flex  sm:flex-row">
@@ -18,8 +18,8 @@ function App() {
 
       {/* About Me Section */}
       <section id="about" className="bg-black h-screen flex flex-col md:flex-col lg:flex-row items-center justify-center pt-24">
-        <div>
-          <img src={dp} alt="display pic" className="p-8 md:p-0 rounded-3xl md:rounded-full lg:rounded-full w-25 h-25 md:w-100 md:h-100 lg:h-80 lg:w-80 border-4 border-white" />
+        <div className="shrink-0">
+          <img src={dp} alt="display pic" className="p-8 md:p-0 rounded-full w-48 h-48 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover border-4 border-white aspect-square" />
         </div>
         <div className="text-white font-montserrat p-10 md:p-8 lg:p-0 pt-20 md:pt-20 lg:pt-0 lg:pl-20 text-2xl md:text-4xl lg:text-6xl md:mt-0">
           Hello, I am N Digvijay
@@ -106,7 +106,7 @@ function App() {
 
           {/* Graph Based Malware Analysis API */}
           <a href="https://github.com/ndigvijay/Capstone_98_2025" target="_blank" rel="noopener noreferrer"
-             className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
+            className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
             <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Graph Based Malware Analysis API</h3>
             <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
               A malware analysis platform that combines graph theory and machine learning to classify
@@ -120,7 +120,7 @@ function App() {
 
           {/* Mflix - Netflix Clone */}
           <a href="https://mflix-nu-seven.vercel.app/" target="_blank" rel="noopener noreferrer"
-             className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
+            className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
             <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Mflix - Netflix Clone</h3>
             <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
               A streaming platform clone built to understand API integration and web development fundamentals.
@@ -134,7 +134,7 @@ function App() {
 
           {/* Cruise Connect */}
           <a href="https://cruise-connect.vercel.app/" target="_blank" rel="noopener noreferrer"
-             className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
+            className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
             <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Cruise Connect</h3>
             <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
               A business-to-consumer car rental platform featuring complete CRUD operations for vehicle management.
@@ -148,7 +148,7 @@ function App() {
 
           {/* Restaurant Ordering System */}
           <a href="https://restaurant-ordering-system-9alk.onrender.com" target="_blank" rel="noopener noreferrer"
-             className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
+            className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
             <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Restaurant Ordering System</h3>
             <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
               A comprehensive dine-in ordering platform that streamlines the restaurant experience.
