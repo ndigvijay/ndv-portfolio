@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import dp from './pics/dp.png';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <div className="text-white font-montserrat p-10 md:p-8 lg:p-0 pt-20 md:pt-20 lg:pt-0 lg:pl-20 text-2xl md:text-4xl lg:text-6xl md:mt-0">
           Hello, I am N Digvijay
           <br />
-          Full Stack Developer at GoWarm.ai
+          Software Engineer at GoWarm.ai
           <br />
           B.tech Graduate from PESU
         </div>
@@ -62,105 +63,230 @@ function App() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="bg-gray-900 min-h-screen flex flex-col items-center justify-center p-10 md:p-20">
-        <div className="text-center mb-12">
-          <h2 className="text-white font-montserrat text-3xl md:text-6xl lg:text-7xl">Experience</h2>
-        </div>
-        <div className="text-white font-montserrat w-full max-w-4xl space-y-12">
-          {/* GoWarm - Software Developer */}
-          <div className="border-l-4 border-gray-600 pl-6">
-            <h3 className="text-2xl md:text-3xl font-bold">Software Developer Engineer</h3>
-            <p className="text-xl md:text-2xl text-gray-300 mt-2">GoWarm</p>
-            <p className="text-lg md:text-xl text-gray-400 mt-1">Aug 2025 - Present · 3 mos</p>
-            <p className="text-lg md:text-xl text-gray-400">Hyderabad, Telangana, India · Hybrid</p>
-            <p className="text-base md:text-lg text-gray-500 mt-2">Creating Customer Outreach solutions</p>
-            <p className="text-base md:text-lg text-gray-400 mt-3 font-medium">Skills: Material-UI, React Query, Redux, Microsoft Azure</p>
-          </div>
+      <section id="experience" className="bg-gray-900 min-h-screen flex flex-col items-center justify-center p-10 md:p-20 overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-white font-montserrat text-3xl md:text-6xl lg:text-7xl font-bold">Experience</h2>
+        </motion.div>
 
-          {/* GoWarm - Dev Intern */}
-          <div className="border-l-4 border-gray-600 pl-6">
-            <h3 className="text-2xl md:text-3xl font-bold">Dev Intern</h3>
-            <p className="text-xl md:text-2xl text-gray-300 mt-2">GoWarm</p>
-            <p className="text-lg md:text-xl text-gray-400 mt-1">Jan 2025 - Jul 2025 · 7 mos</p>
-            <p className="text-lg md:text-xl text-gray-400">Hyderabad, Telangana, India · Onsite</p>
-            <p className="text-base md:text-lg text-gray-500 mt-2">Building and maintaining microservices.</p>
-            <p className="text-base md:text-lg text-gray-400 mt-3 font-medium">Skills: Customer Relationship Management (CRM), FastAPI, HubSpot Sales Hub, Spring Boot, MongoDB, Java, React.js</p>
-          </div>
+        <div className="relative w-full max-w-6xl">
+          {/* Timeline Line */}
+          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-[#00A4BD] rounded-full"></div>
 
-          {/* CoDMAV PESU - Intern */}
-          <div className="border-l-4 border-gray-600 pl-6">
-            <h3 className="text-2xl md:text-3xl font-bold">Intern</h3>
-            <p className="text-xl md:text-2xl text-gray-300 mt-2">CoDMAV PESU</p>
-            <p className="text-lg md:text-xl text-gray-400 mt-1">Jun 2024 - Nov 2024 · 6 mos</p>
-            <p className="text-lg md:text-xl text-gray-400">Bangalore Urban, Karnataka, India · Hybrid</p>
-            <p className="text-base md:text-lg text-gray-500 mt-2">Building a Research Portal for PES University.</p>
-            <p className="text-base md:text-lg text-gray-400 mt-3 font-medium">Skills: Software Project Management, MongoDB, Tailwind CSS, Full-Stack Development, Express.js, Nginx, React.js, Reverse Proxy</p>
+          <div className="space-y-12 md:space-y-24">
+            {/* Experience 1 */}
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="relative flex flex-col md:flex-row items-center md:justify-between"
+            >
+              <div className="flex-1 md:w-1/2 md:pr-12 mb-8 md:mb-0 pl-8 md:pl-0">
+                {/* Card Content */}
+                <div className="bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-700 hover:border-[#00A4BD] transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-white">Software Developer Engineer</h3>
+                  <h4 className="text-xl text-[#00A4BD] mt-1">GoWarm</h4>
+                  <p className="text-gray-400 mt-2 text-sm">Aug 2025 - Present · 3 mos</p>
+                  <p className="text-gray-500 text-sm">Hyderabad, Telangana, India · Hybrid</p>
+                  <p className="text-gray-300 mt-4">Creating Customer Outreach solutions</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {["Material-UI", "React Query", "Redux", "Microsoft Azure"].map((skill) => (
+                      <span key={skill} className="px-3 py-1 bg-gray-700 text-[#00A4BD] rounded-full text-xs">{skill}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              {/* Dot */}
+              <div className="absolute left-[-5px] md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-[#00A4BD] rounded-full border-4 border-gray-900 z-10"></div>
+              <div className="flex-1 md:w-1/2 md:pl-12 hidden md:block"></div>
+            </motion.div>
+
+            {/* Experience 2 (Right aligned on desktop) */}
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="relative flex flex-col md:flex-row-reverse items-center md:justify-between"
+            >
+              <div className="flex-1 md:w-1/2 md:pl-12 mb-8 md:mb-0 pl-8 md:pl-0">
+                <div className="bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-700 hover:border-[#00A4BD] transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-white">Dev Intern</h3>
+                  <h4 className="text-xl text-[#00A4BD] mt-1">GoWarm</h4>
+                  <p className="text-gray-400 mt-2 text-sm">Jan 2025 - Jul 2025 · 7 mos</p>
+                  <p className="text-gray-500 text-sm">Hyderabad, Telangana, India · Onsite</p>
+                  <p className="text-gray-300 mt-4">Building and maintaining microservices.</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {["CRM", "FastAPI", "HubSpot", "Spring Boot", "MongoDB", "Java", "React.js"].map((skill) => (
+                      <span key={skill} className="px-3 py-1 bg-gray-700 text-[#00A4BD] rounded-full text-xs">{skill}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="absolute left-[-5px] md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-[#00A4BD] rounded-full border-4 border-gray-900 z-10"></div>
+              <div className="flex-1 md:w-1/2 md:pr-12 hidden md:block"></div>
+            </motion.div>
+
+            {/* Experience 3 (Left aligned) */}
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="relative flex flex-col md:flex-row items-center md:justify-between"
+            >
+              <div className="flex-1 md:w-1/2 md:pr-12 mb-8 md:mb-0 pl-8 md:pl-0">
+                <div className="bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-700 hover:border-[#00A4BD] transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-white">Intern</h3>
+                  <h4 className="text-xl text-[#00A4BD] mt-1">CoDMAV PESU</h4>
+                  <p className="text-gray-400 mt-2 text-sm">Jun 2024 - Nov 2024 · 6 mos</p>
+                  <p className="text-gray-500 text-sm">Bangalore Urban, Karnataka, India · Hybrid</p>
+                  <p className="text-gray-300 mt-4">Building a Research Portal for PES University.</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {["Project Mgmt", "MongoDB", "Tailwind", "Express.js", "Nginx", "React.js"].map((skill) => (
+                      <span key={skill} className="px-3 py-1 bg-gray-700 text-[#00A4BD] rounded-full text-xs">{skill}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="absolute left-[-5px] md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-[#00A4BD] rounded-full border-4 border-gray-900 z-10"></div>
+              <div className="flex-1 md:w-1/2 md:pl-12 hidden md:block"></div>
+            </motion.div>
+
           </div>
         </div>
       </section>
 
       {/* Projects Section */}
       <section id="projects" className="bg-gray-900 min-h-screen justify-center pt-20 p-10 md:p-20">
-        <h2 className="text-white font-montserrat text-6xl md:text-7xl lg:text-9xl mb-8 md:mb-20 pt-0 text-center">Projects</h2>
-        <div className='flex flex-col justify-center items-center gap-8 md:gap-12 max-w-5xl mx-auto'>
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-white font-montserrat text-6xl md:text-7xl lg:text-9xl mb-8 md:mb-20 pt-0 text-center">Projects</h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
 
           {/* Graph Based Malware Analysis API */}
-          <a href="https://github.com/ndigvijay/Capstone_98_2025" target="_blank" rel="noopener noreferrer"
-            className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
-            <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Graph Based Malware Analysis API</h3>
-            <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
+          <motion.a
+            href="https://github.com/ndigvijay/Capstone_98_2025"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.05, borderColor: "#00A4BD" }}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <h3 className="text-white font-montserrat text-2xl md:text-3xl font-bold mb-4 group-hover:text-[#00A4BD] transition-colors">Graph Based Malware Analysis API</h3>
+            <p className="text-gray-300 font-montserrat text-base md:text-lg mb-6 leading-relaxed flex-grow">
               A malware analysis platform that combines graph theory and machine learning to classify
               and analyze malicious executables. The system analyzes pre-trained malware executables and provides
               detailed classification probabilities.
             </p>
-            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg font-medium">
-              <span className="text-gray-500">Technologies:</span> Flask, NetworkX, PyMongo, Matplotlib, PyVis, Cuckoo Sandbox, React 18, React Router, Tailwind CSS
-            </p>
-          </a>
+            <div className="mt-auto">
+              <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">Technologies:</p>
+              <div className="flex flex-wrap gap-2">
+                {["Flask", "NetworkX", "PyMongo", "Matplotlib", "PyVis", "Cuckoo Sandbox", "React 18", "Tailwind CSS"].map((tech) => (
+                  <span key={tech} className="px-3 py-1 bg-gray-700 text-[#00A4BD] rounded-full text-xs">{tech}</span>
+                ))}
+              </div>
+            </div>
+          </motion.a>
 
           {/* Mflix - Netflix Clone */}
-          <a href="https://mflix-nu-seven.vercel.app/" target="_blank" rel="noopener noreferrer"
-            className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
-            <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Mflix - Netflix Clone</h3>
-            <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
+          <motion.a
+            href="https://mflix-nu-seven.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.05, borderColor: "#00A4BD" }}
+            transition={{ duration: 0.3, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <h3 className="text-white font-montserrat text-2xl md:text-3xl font-bold mb-4 group-hover:text-[#00A4BD] transition-colors">Mflix - Netflix Clone</h3>
+            <p className="text-gray-300 font-montserrat text-base md:text-lg mb-6 leading-relaxed flex-grow">
               A streaming platform clone built to understand API integration and web development fundamentals.
               Used the OMDB API to fetch and display movie data dynamically. Implemented custom authentication
               from scratch to handle user login and session management.
             </p>
-            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg font-medium">
-              <span className="text-gray-500">Technologies:</span> React, CSS, React Router Dom, MongoDB, Express, Node.js
-            </p>
-          </a>
+            <div className="mt-auto">
+              <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">Technologies:</p>
+              <div className="flex flex-wrap gap-2">
+                {["React", "CSS", "React Router Dom", "MongoDB", "Express", "Node.js"].map((tech) => (
+                  <span key={tech} className="px-3 py-1 bg-gray-700 text-[#00A4BD] rounded-full text-xs">{tech}</span>
+                ))}
+              </div>
+            </div>
+          </motion.a>
 
           {/* Cruise Connect */}
-          <a href="https://cruise-connect.vercel.app/" target="_blank" rel="noopener noreferrer"
-            className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
-            <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Cruise Connect</h3>
-            <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
+          <motion.a
+            href="https://cruise-connect.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.05, borderColor: "#00A4BD" }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <h3 className="text-white font-montserrat text-2xl md:text-3xl font-bold mb-4 group-hover:text-[#00A4BD] transition-colors">Cruise Connect</h3>
+            <p className="text-gray-300 font-montserrat text-base md:text-lg mb-6 leading-relaxed flex-grow">
               A business-to-consumer car rental platform featuring complete CRUD operations for vehicle management.
               Built with dual-layer authentication supporting both admin and user roles. Implemented pagination,
-              advanced filtering, and search functionality to enhance user experience when browsing available cars.
+              advanced filtering, and search functionality.
             </p>
-            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg font-medium">
-              <span className="text-gray-500">Technologies:</span> React, Tailwind CSS, MongoDB, Express, Node.js
-            </p>
-          </a>
+            <div className="mt-auto">
+              <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">Technologies:</p>
+              <div className="flex flex-wrap gap-2">
+                {["React", "Tailwind CSS", "MongoDB", "Express", "Node.js"].map((tech) => (
+                  <span key={tech} className="px-3 py-1 bg-gray-700 text-[#00A4BD] rounded-full text-xs">{tech}</span>
+                ))}
+              </div>
+            </div>
+          </motion.a>
 
           {/* Restaurant Ordering System */}
-          <a href="https://restaurant-ordering-system-9alk.onrender.com" target="_blank" rel="noopener noreferrer"
-            className="w-full bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-gray-750 hover:border-gray-600 hover:shadow-2xl">
-            <h3 className="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Restaurant Ordering System</h3>
-            <p className="text-gray-300 font-montserrat text-base md:text-lg lg:text-xl mb-4 leading-relaxed">
+          <motion.a
+            href="https://restaurant-ordering-system-9alk.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.05, borderColor: "#00A4BD" }}
+            transition={{ duration: 0.3, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full"
+          >
+            <h3 className="text-white font-montserrat text-2xl md:text-3xl font-bold mb-4 group-hover:text-[#00A4BD] transition-colors">Restaurant Ordering System</h3>
+            <p className="text-gray-300 font-montserrat text-base md:text-lg mb-6 leading-relaxed flex-grow">
               A comprehensive dine-in ordering platform that streamlines the restaurant experience.
               Customers can browse menus, place orders directly from their tables, and receive automated
-              bill generation. Built using Spring Boot architecture with proper separation of concerns
-              through Models, Repositories, Services, and Controllers. Containerized with Docker for
-              easy deployment and scalability.
+              bill generation. Containerized with Docker for easy deployment.
             </p>
-            <p className="text-gray-400 font-montserrat text-sm md:text-base lg:text-lg font-medium">
-              <span className="text-gray-500">Technologies:</span> Java, JSP, Spring Boot, CSS, Docker
-            </p>
-          </a>
+            <div className="mt-auto">
+              <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">Technologies:</p>
+              <div className="flex flex-wrap gap-2">
+                {["Java", "JSP", "Spring Boot", "CSS", "Docker"].map((tech) => (
+                  <span key={tech} className="px-3 py-1 bg-gray-700 text-[#00A4BD] rounded-full text-xs">{tech}</span>
+                ))}
+              </div>
+            </div>
+          </motion.a>
 
         </div>
       </section>
