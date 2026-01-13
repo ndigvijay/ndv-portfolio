@@ -92,7 +92,7 @@ function App() {
                 <div className="bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-700 hover:border-[#00A4BD] transition-colors duration-300">
                   <h3 className="text-2xl font-bold text-white">Software Developer Engineer</h3>
                   <h4 className="text-xl text-[#00A4BD] mt-1">GoWarm</h4>
-                  <p className="text-gray-400 mt-2 text-sm">Aug 2025 - Present · 3 mos</p>
+                  <p className="text-gray-400 mt-2 text-sm">Aug 2025 - Present · 6 mos</p>
                   <p className="text-gray-500 text-sm">Hyderabad, Telangana, India · Hybrid</p>
                   <p className="text-gray-300 mt-4">Creating Customer Outreach solutions</p>
                   <div className="mt-4 flex flex-wrap gap-2">
