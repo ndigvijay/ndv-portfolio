@@ -21,34 +21,24 @@ function getDurationString(startDate, endDate) {
 
 const experiences = [
   {
-    title: "Software Developer Engineer",
+    title: "Software Engineer I",
     company: "GoWarm",
-    start: new Date(2025, 6),
+    start: new Date(2025, 7),
     end: null,
-    location: "Hyderabad, Telangana, India · Hybrid",
-    description: "Creating Customer Outreach solutions",
-    skills: ["Material-UI", "React Query", "Redux", "Microsoft Azure"],
+    location: "Hyderabad, Telangana, India",
+    description: "Extended GoWarm solutions (Contact Monitoring, Summary Generation) into Chrome Extension. Worked with Voyager API for LinkedIn outreach sequences. Extracted meeting transcripts for Deal Intelligence AI. Integrated Google Sheets for opportunity data export on user/tenant scopes.",
+    skills: ["Chrome Extension", "Voyager API", "Deal Intelligence AI", "Google Sheets"],
     align: "left",
   },
   {
-    title: "Dev Intern",
+    title: "Software Developer Intern",
     company: "GoWarm",
     start: new Date(2025, 0),
     end: new Date(2025, 6),
     location: "Hyderabad, Telangana, India · Onsite",
-    description: "Building and maintaining microservices.",
-    skills: ["CRM", "FastAPI", "HubSpot", "Spring Boot", "MongoDB", "Java", "React.js"],
+    description: "Worked with microservices (Flask, Spring Boot, React). Integrated GoWarm solutions with Salesforce and HubSpot CRMs. Built a new microservice for HubSpot outreach integration.",
+    skills: ["Flask", "Spring Boot", "React", "Salesforce", "HubSpot", "Microservices"],
     align: "right",
-  },
-  {
-    title: "Intern",
-    company: "CoDMAV PESU",
-    start: new Date(2024, 5),
-    end: new Date(2024, 10),
-    location: "Bangalore Urban, Karnataka, India · Hybrid",
-    description: "Building a Research Portal for PES University.",
-    skills: ["Project Mgmt", "MongoDB", "Tailwind", "Express.js", "Nginx", "React.js"],
-    align: "left",
   },
 ];
 
@@ -161,17 +151,18 @@ function App() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
 
           {/* PESU-MAX */}
-          <a
-            href="https://chromewebstore.google.com/detail/pesu-max/cmdaofpmedkoahlmcihcdaehgenfdnen"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl flex flex-col h-full"
-          >
+          <div className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl flex flex-col h-full">
             <h3 className="text-white font-montserrat text-2xl md:text-3xl font-bold mb-4">PESU-MAX</h3>
-            <p className="text-gray-300 font-montserrat text-base md:text-lg mb-6 leading-relaxed flex-grow">
+            <p className="text-gray-300 font-montserrat text-base md:text-lg mb-4 leading-relaxed flex-grow">
               A Chrome extension that enhances PESU Academy with parallel course content downloads,
               attendance calculator, SGPA/CGPA calculators, faculty information lookup, and PYQ downloader,
               with all data stored locally in the browser.
+            </p>
+            <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">
+              <strong>Links:</strong>{' '}
+              <a href="https://github.com/ndigvijay/PESU-MAX" target="_blank" rel="noopener noreferrer" className="text-[#00A4BD] underline">Source</a>
+              {' | '}
+              <a href="https://chromewebstore.google.com/detail/pesu-max/cmdaofpmedkoahlmcihcdaehgenfdnen" target="_blank" rel="noopener noreferrer" className="text-[#00A4BD] underline">Extension</a>
             </p>
             <div className="mt-auto">
               <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">Technologies:</p>
@@ -181,66 +172,66 @@ function App() {
                 ))}
               </div>
             </div>
-          </a>
+          </div>
 
-          {/* Mflix - Netflix Clone */}
+          {/* PESU-Discord-Authentication-Bot */}
           <a
-            href="https://mflix-nu-seven.vercel.app/"
+            href="https://github.com/ndigvijay/PESU-Discord-Authentication-Bot"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl flex flex-col h-full"
           >
-            <h3 className="text-white font-montserrat text-2xl md:text-3xl font-bold mb-4">Mflix - Netflix Clone</h3>
+            <h3 className="text-white font-montserrat text-2xl md:text-3xl font-bold mb-4">PESU-Discord-Authentication-Bot</h3>
             <p className="text-gray-300 font-montserrat text-base md:text-lg mb-6 leading-relaxed flex-grow">
-              A streaming platform clone built to understand API integration and web development fundamentals.
-              Used the OMDB API to fetch and display movie data dynamically. Implemented custom authentication
-              from scratch to handle user login and session management.
+              A Discord Bot to authenticate students from PES University. Used in various PES club servers for
+              verifying student identities. Deployed on Koyeb with a cronjob to keep it alive.
             </p>
             <div className="mt-auto">
               <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">Technologies:</p>
               <div className="flex flex-wrap gap-2">
-                {["React", "CSS", "React Router Dom", "MongoDB", "Express", "Node.js"].map((tech) => (
+                {["Python", "Flask", "discord.py", "Koyeb"].map((tech) => (
                   <span key={tech} className="px-3 py-1 bg-gray-700 text-[#00A4BD] rounded-full text-xs">{tech}</span>
                 ))}
               </div>
             </div>
             </a>
 
-          {/* Cruise Connect */}
-          <a
-            href="https://cruise-connect.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl flex flex-col h-full"
-          >
-            <h3 className="text-white font-montserrat text-2xl md:text-3xl font-bold mb-4">Cruise Connect</h3>
-            <p className="text-gray-300 font-montserrat text-base md:text-lg mb-6 leading-relaxed flex-grow">
-              A business-to-consumer car rental platform featuring complete CRUD operations for vehicle management.
-              Built with dual-layer authentication supporting both admin and user roles. Implemented pagination,
-              advanced filtering, and search functionality.
+          {/* Connectly */}
+          <div className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl flex flex-col h-full">
+            <h3 className="text-white font-montserrat text-2xl md:text-3xl font-bold mb-4">Connectly</h3>
+            <p className="text-gray-300 font-montserrat text-base md:text-lg mb-4 leading-relaxed flex-grow">
+              A service for generating outreach messages based on LinkedIn profiles. Applied CRUD operations
+              to manage outreach campaigns. Used Anthropic SDK with custom prompts for message generation.
+            </p>
+            <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">
+              <strong>Links:</strong>{' '}
+              <a href="https://github.com/ndigvijay/Connectly-FullStack/tree/main/outflo-backend/src" target="_blank" rel="noopener noreferrer" className="text-[#00A4BD] underline">Source</a>
+              {' | '}
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7350403907665154050/" target="_blank" rel="noopener noreferrer" className="text-[#00A4BD] underline">Demo</a>
             </p>
             <div className="mt-auto">
               <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">Technologies:</p>
               <div className="flex flex-wrap gap-2">
-                {["React", "Tailwind CSS", "MongoDB", "Express", "Node.js"].map((tech) => (
+                {["NodeJS", "Anthropic SDK", "React", "MongoDB"].map((tech) => (
                   <span key={tech} className="px-3 py-1 bg-gray-700 text-[#00A4BD] rounded-full text-xs">{tech}</span>
                 ))}
               </div>
             </div>
-            </a>
+            </div>
 
           {/* Restaurant Ordering System */}
-          <a
-            href="https://restaurant-ordering-system-9alk.onrender.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl flex flex-col h-full"
-          >
+          <div className="bg-gray-800 border border-gray-700 p-6 md:p-8 rounded-2xl shadow-xl flex flex-col h-full">
             <h3 className="text-white font-montserrat text-2xl md:text-3xl font-bold mb-4">Restaurant Ordering System</h3>
-            <p className="text-gray-300 font-montserrat text-base md:text-lg mb-6 leading-relaxed flex-grow">
+            <p className="text-gray-300 font-montserrat text-base md:text-lg mb-4 leading-relaxed flex-grow">
               A comprehensive dine-in ordering platform that streamlines the restaurant experience.
               Customers can browse menus, place orders directly from their tables, and receive automated
               bill generation. Containerized with Docker for easy deployment.
+            </p>
+            <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">
+              <strong>Links:</strong>{' '}
+              <a href="https://github.com/ndigvijay/Restaurant-Ordering-System" target="_blank" rel="noopener noreferrer" className="text-[#00A4BD] underline">Source</a>
+              {' | '}
+              <a href="https://restaurant-ordering-system-9alk.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-[#00A4BD] underline">Website</a>
             </p>
             <div className="mt-auto">
               <p className="text-gray-400 font-montserrat text-sm font-medium mb-2">Technologies:</p>
@@ -250,7 +241,7 @@ function App() {
                 ))}
               </div>
             </div>
-          </a>
+          </div>
 
         </div>
       </section>
