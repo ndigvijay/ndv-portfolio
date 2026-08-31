@@ -1,7 +1,7 @@
 import React from 'react';
 import dp from './pics/dp.png';
 
-const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 function formatDate(date) {
   return `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
@@ -24,7 +24,7 @@ const experiences = [
     title: "Software Engineer I",
     company: "GoWarm",
     start: new Date(2025, 7),
-    end: null,
+    end: new Date(2026, 5),
     location: "Hyderabad, Telangana, India",
     description: "Extended GoWarm solutions (Contact Monitoring, Summary Generation) into Chrome Extension. Worked with Voyager API for LinkedIn outreach sequences. Extracted meeting transcripts for Deal Intelligence AI. Integrated Google Sheets for opportunity data export on user/tenant scopes.",
     skills: ["Chrome Extension", "Voyager API", "Deal Intelligence AI", "Google Sheets"],
@@ -65,7 +65,7 @@ function App() {
         <div className="text-white font-montserrat p-10 md:p-8 lg:p-0 pt-20 md:pt-20 lg:pt-0 lg:pl-20 text-2xl md:text-4xl lg:text-6xl md:mt-0">
           Hello, I am N Digvijay
           <br />
-          Software Engineer at GoWarm.ai
+          Software Engineer
           <br />
           B.tech Graduate from PESU
         </div>
