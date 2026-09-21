@@ -251,13 +251,10 @@ function App() {
         <h2 className="text-white font-montserrat text-3xl md:text-6xl lg:text-7xl mb-8">Contact Me</h2>
         <div className="flex space-x-6 lg:space-x-20">
           <a href="https://www.linkedin.com/in/digvijay-narayan-8b2460259/" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn" className="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
-          </a>
-          <a href="https://www.instagram.com/ndv_005/" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram" className="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
           </a>
           <a href="https://github.com/ndigvijay" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub" className="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
+            <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" className="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
           </a>
         </div>
       </section>
